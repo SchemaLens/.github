@@ -7,10 +7,11 @@
 **Your schema, in focus.**
 *Instant ERD from the files you already write — right inside VS Code.*
 
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](#)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://schemalens.westbridgeco.com)
 [![License](https://img.shields.io/badge/License-PolyForm%20NC%201.0-4ec9b0?style=flat-square)](#-license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-4ec9b0?style=flat-square)](#-contributing)
-[![Built with](https://img.shields.io/badge/Built%20with-☕-ffdd00?style=flat-square)](#)
+[![Built with](https://img.shields.io/badge/Built%20with-☕-ffdd00?style=flat-square)](https://schemalens.westbridgeco.com)
+[![Website](https://img.shields.io/badge/Website-schemalens.westbridgeco.com-4ec9b0?style=flat-square&logo=google-chrome&logoColor=white)](https://schemalens.westbridgeco.com)
 
 <br/>
 
@@ -84,7 +85,7 @@ Schema Lens isn't trying to replace those tools. It's the thing you reach for wh
 | **TypeORM** | `*.entity.ts` | 🔜 Planned |
 | **Sequelize** | `*.model.ts` | 🔜 Planned |
 
-> Missing your stack? [Open an issue](../../issues) — parser contributions are especially welcome.
+> Missing your stack? [Open an issue](https://github.com/SchemaLens/schema-lens/issues) — parser contributions are especially welcome.
 
 </details>
 
@@ -110,7 +111,7 @@ code --install-extension schema-lens-x.y.z.vsix
 **Option C — Clone and run locally:**
 
 ```bash
-git clone https://github.com/yourusername/schema-lens
+git clone https://github.com/SchemaLens/schema-lens
 cd schema-lens
 npm install
 # Press F5 in VS Code to launch the Extension Development Host
@@ -164,7 +165,7 @@ Configuration lives in your VS Code `settings.json`. Options are evolving — ch
 
 ## 🗺️ Roadmap
 
-> Tracked properly in [GitHub Issues](../../issues) and the project board — here's the high-level picture.
+> Tracked properly in [GitHub Issues](https://github.com/SchemaLens/schema-lens/issues) and the project board — here's the high-level picture.
 
 **Near-term** *(rough priority order):*
 
@@ -184,7 +185,7 @@ Configuration lives in your VS Code `settings.json`. Options are evolving — ch
 - [ ] GitHub Action to generate ERD PNGs on schema change
 - [ ] Optional team diff viewer (potential paid add-on)
 
-> Have an idea? [Open a discussion](../../discussions) rather than an issue if it's exploratory.
+> Have an idea? [Open a discussion](https://github.com/orgs/SchemaLens/discussions) rather than an issue if it's exploratory.
 
 ---
 
@@ -199,7 +200,7 @@ Contributions are welcome — especially:
 
 **Before opening a PR:**
 
-1. Check [existing issues](../../issues) first
+1. Check [existing issues](https://github.com/SchemaLens/schema-lens/issues) first
 2. Open an issue describing what you want to change
 3. Keep changes focused and minimal
 
@@ -211,7 +212,7 @@ Contributions are welcome — especially:
 <br/>
 
 ```bash
-git clone https://github.com/yourusername/schema-lens
+git clone https://github.com/SchemaLens/schema-lens
 cd schema-lens
 npm install
 
@@ -245,9 +246,7 @@ src/
 
 If Schema Lens saves you even one *"wait, what was that foreign key again?"* moment — a star helps a lot. It makes the project more visible and keeps the motivation to ship.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/schema-lens&type=Date&theme=dark)](https://star-history.com/#yourusername/schema-lens&Date)
-
-> *Replace `yourusername` with your GitHub username for the star chart to work.*
+[![Star History Chart](https://api.star-history.com/svg?repos=SchemaLens/schema-lens&type=Date&theme=dark)](https://star-history.com/#SchemaLens/schema-lens&Date)
 
 ---
 
@@ -292,10 +291,10 @@ This README may lag behind the actual implementation. Treat it as a best-effort 
 
 | For what | Where |
 |---|---|
-| Bugs and feature requests | [GitHub Issues](../../issues) |
-| Ideas and discussion | [GitHub Discussions](../../discussions) |
-| Commercial licensing | [your@email.com — update this] |
-| Just want to say hi | Same as above, that's fine |
+| Bugs and feature requests | [GitHub Issues](https://github.com/SchemaLens/schema-lens/issues) |
+| Ideas and discussion | [GitHub Discussions](https://github.com/orgs/SchemaLens/discussions) |
+| Website | [schemalens.westbridgeco.com](https://schemalens.westbridgeco.com) |
+| Just want to say hi | [Open a discussion](https://github.com/orgs/SchemaLens/discussions) |
 
 ---
 
@@ -307,6 +306,6 @@ This README may lag behind the actual implementation. Treat it as a best-effort 
 
 <br/>
 
-<img src="public/logo.svg" width="20" /> Made with ☕ by [Sangeeth](https://github.com/yourusername)
+<img src="public/logo.svg" width="20" /> Made with ☕ by [Sangeeth](https://github.com/SchemaLens)
 
 </div>
