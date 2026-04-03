@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo.svg" alt="Schema Lens" width="80" />
+<img src="logo.svg" alt="Schema Lens" width="80" />
 
 # Schema Lens
 
