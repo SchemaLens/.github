@@ -14,7 +14,7 @@
 
 <br/>
 
-<img src="public/vscodeScreenshot.png" alt="Schema Lens running inside VS Code" width="720" />
+<img src="vscodeScreenshot.png" alt="Schema Lens running inside VS Code" width="720" />
 
 <br/>
 
