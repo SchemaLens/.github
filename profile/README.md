@@ -130,6 +130,6 @@ See LICENSE for full terms.[file:1]
 
 **Built for execution. No fluff.**
 
-<img src="logo.svg" width="20" /> By Sangeeth Promod — Westbridge & Co.
+<img src="logo.svg" width="20" /> By Sangeeth Promod
 
 </div>
