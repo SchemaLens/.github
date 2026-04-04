@@ -1,3 +1,44 @@
+<div align="center">
+
+<img src="logo.svg" alt="Schema Lens" width="80" />
+
+# Schema Lens
+
+**Your schema, in focus.**
+*Instant ERD from the files you already write — right inside VS Code.*
+
+[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=SchemaLens.schema-lens)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-4ec9b0?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING-3.md)
+[![Built with](https://img.shields.io/badge/Built%20with-☕-ffdd00?style=flat-square)](https://schema.westbridgeco.com)
+[![GitHub](https://img.shields.io/badge/GitHub-schema--lens-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/schema-lens/schema-lens)
+
+<br/>
+
+<!-- vscodeScreenshot.png will be added to repo/assets when available -->
+
+<br/>
+
+> ⚠️ **Early-stage and evolving.** Expect rough edges.
+> Issues and contributions welcome per [CONTRIBUTING-3.md](CONTRIBUTING-3.md).
+
+</div>
+
+---
+
+## ≋ What is Schema Lens?
+
+Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Knex migrations and renders an interactive ERD directly inside VS Code, with no database connection required.[file:2]
+You have this: Schema Lens gives you this:
+
+schema.prisma ┌─────────────┐ ┌─────────────┐
+migrations/001.sql ───▶ │ users │────▶│ posts │
+drizzle/schema.ts │ PK id │ │ PK id │
+│ email │ │ FK author │
+│ name │ │ title │
+└─────────────┘ └─────────────┘
+
+text
 
 ---
 
