@@ -7,42 +7,27 @@
 **Your schema, in focus.**
 *Instant ERD from the files you already write — right inside VS Code.*
 
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=SchemaLens.schema-lens)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-4ec9b0?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING-3.md)
-[![Built with](https://img.shields.io/badge/Built%20with-☕-ffdd00?style=flat-square)](https://schema.westbridgeco.com)
-[![GitHub](https://img.shields.io/badge/GitHub-schema--lens-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/schema-lens/schema-lens)
-
-<br/>
-
-<!-- vscodeScreenshot.png will be added to repo/assets when available -->
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/SchemaLens/schema-lens/blob/main/CONTRIBUTING.md)
+[![GitHub](https://img.shields.io/badge/GitHub-schema--lens-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/SchemaLens/schema-lens)
 
 <br/>
 
 > ⚠️ **Early-stage and evolving.** Expect rough edges.
-> Issues and contributions welcome per [CONTRIBUTING-3.md](CONTRIBUTING-3.md).
+> Issues and contributions welcome — see [CONTRIBUTING.md](https://github.com/SchemaLens/schema-lens/blob/main/CONTRIBUTING.md).
 
 </div>
 
 ---
 
-## ≋ What is Schema Lens?
+## What is Schema Lens?
 
-Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Knex migrations and renders an interactive ERD directly inside VS Code, with no database connection required.[file:2]
-You have this: Schema Lens gives you this:
-
-schema.prisma ┌─────────────┐ ┌─────────────┐
-migrations/001.sql ───▶ │ users │────▶│ posts │
-drizzle/schema.ts │ PK id │ │ PK id │
-│ email │ │ FK author │
-│ name │ │ title │
-└─────────────┘ └─────────────┘
-
-text
+Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Knex migrations and renders an interactive ERD directly inside VS Code — no database connection required.
 
 ---
 
-## ✦ Why Schema Lens?
+## Why Schema Lens?
 
 |  | Schema Lens | Browser-based tools | DB admin tools |
 |---|:---:|:---:|:---:|
@@ -50,79 +35,81 @@ text
 | No sign-up required | ✅ | ❌ | ❌ |
 | Works without a live DB | ✅ | ❌ | ❌ |
 | Reads code directly | ✅ | ❌ | ❌ |
-| Fully offline | ✅ | ❌ | ❌ |[file:2]
-
-Schema Lens targets quick visualization from files already open in your editor.[file:2]
-
-## ⚡ Features
-
-- **Interactive ERD in VS Code** — zoom, pan in a side panel.
-- **File-first support** — raw SQL (`.sql`), Prisma (`schema.prisma`), Drizzle (`pgTable` etc.), Knex (`createTable`).
-- **Live reload on save** — diagram updates automatically.
-- **Visual diff mode** — compare schemas (added 🟢, removed 🔴, modified 🟡).
-- **Respects VS Code theme** — light/dark mode support.[file:2]
 
 ---
 
-## 📋 Supported Formats
+## Features
 
-| Format     | File Pattern                    | Parser Approach                          |
-|------------|---------------------------------|------------------------------------------|
-| Raw SQL    | `*.sql`                         | `node-sql-parser` for CREATE/ALTER/FK    |
-| Prisma     | `schema.prisma`                 | Line-based for models/fields/@relation   |
-| Drizzle    | `*.ts` with pg/mysql/sqliteTable| TypeScript AST walk                      |
-| Knex.js    | `*.ts` with `createTable`       | TypeScript AST walk                      |[file:2]
-
----
-
-## 🚀 Installation
-
-### From VSIX
-
-1. Download `.vsix` from [Releases](https://github.com/schema-lens/schema-lens/releases).[file:2]
-2. In VS Code Extensions (`…` menu) > **Install from VSIX…**.
-3. Select file and install.[file:2]
-
-### From Marketplace (when available)
-
-1. `Ctrl+Shift+X` > Search **Schema Lens** > Install.[file:2]
+- **Interactive ERD in VS Code** — zoom and pan in a side panel next to your editor
+- **File-first support** — raw SQL (`.sql`), Prisma (`schema.prisma`), Drizzle (`pgTable`, `mysqlTable`, `sqliteTable`), Knex (`createTable`)
+- **Live reload on save** — diagram refreshes automatically when you save
+- **Visual diff mode** — compare two schema files and see added 🟢, removed 🔴, and modified 🟡 tables
+- **Respects your VS Code theme** — light and dark mode support
 
 ---
 
-## 🎯 Usage
+## Supported Formats
 
-1. Open supported file (e.g., `*.sql`, `schema.prisma`).
-2. Click **≋ ERD** in editor title bar or `Ctrl+Shift+P` > **Schema Lens: Open ERD**.
-3. Zoom with scroll, pan by drag. Save file to refresh.[file:2]
+| Format | File Pattern | Parser Approach |
+|---|---|---|
+| Raw SQL | `*.sql` | `node-sql-parser` for `CREATE`, `ALTER`, `FOREIGN KEY` |
+| Prisma | `schema.prisma` | Line-based parser for `model`, fields, `@relation` |
+| Drizzle | `*.ts` with `pgTable` / `mysqlTable` / `sqliteTable` | TypeScript AST walk |
+| Knex.js | `*.ts` with `createTable` | TypeScript AST walk |
+
+---
+
+## Installation
+
+Install directly from the VS Code Marketplace:
+
+1. Open VS Code and go to **Extensions** (`Ctrl+Shift+X`)
+2. Search for **Schema Lens**
+3. Click **Install**
+
+Or install via the [VS Code Marketplace page](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens).
+
+---
+
+## Usage
+
+1. Open a supported schema file (`*.sql`, `schema.prisma`, or a Drizzle/Knex `.ts` file)
+2. Click the **Schema Lens icon** in the top-right of the editor title bar, or run **Schema Lens: Open ERD** from the Command Palette (`Ctrl+Shift+P`)
+3. The ERD opens in a side panel next to your code
+4. **Zoom** with the scroll wheel, **pan** by clicking and dragging
+5. Save the file to refresh the diagram with your latest changes
 
 ### Diff Mode
 
-1. Open schema file.
-2. `Ctrl+Shift+P` > **Schema Lens: Compare With…**.
-3. Select second file for visual diff.[file:2]
+1. Open a schema file
+2. Run **Schema Lens: Compare With…** from the Command Palette
+3. Select a second schema file to compare
+4. A diff ERD opens showing added 🟢, removed 🔴, and modified 🟡 tables
 
 ---
 
-## 🗺️ Limitations
+## Limitations
 
-- SQL: PostgreSQL/MySQL focus; vendor specifics may fail.
-- Drizzle/Knex: Auto-detects; Drizzle preferred if mixed.
-- Ignores Prisma enums, views, procedures.
-- Large schemas (>50 tables): Use zoom/pan.[file:2]
-
-## 🤝 Contributing
-
-See [CONTRIBUTING-3.md](CONTRIBUTING-3.md) for process, governance, and dev setup. Maintainer approves all PRs; open issues first for non-trivial work.[file:3]
-
-Contributions licensed under AGPL-3.0.[file:1][file:3]
+- **SQL dialect coverage** — targets PostgreSQL and MySQL; vendor-specific syntax (e.g., SQL Server `IDENTITY`) may not parse cleanly
+- **Drizzle and Knex detection** — for `.ts` files, format is auto-detected from imports and function calls; if a file mixes both patterns, Drizzle is preferred
+- **Prisma enums** — `enum` blocks are currently ignored and do not appear in the ERD
+- **Views and procedures** — not parsed or shown
+- **Very large schemas** — diagrams with more than ~50 tables can feel heavy; use zoom and pan to navigate
 
 ---
 
-## 📜 License
+## Contributing
 
-Licensed under [GNU Affero General Public License v3.0](LICENSE). Copyright (C) 2026 Sangeeth Promod.[file:1][file:2]
+See [CONTRIBUTING.md](https://github.com/SchemaLens/schema-lens/blob/main/CONTRIBUTING.md) for the process, governance, and development setup. All pull requests require maintainer approval — please open an issue first for any non-trivial work.
 
-See LICENSE for full terms.[file:1]
+Contributions are licensed under AGPL-3.0.
+
+---
+
+## License
+
+Licensed under the [GNU Affero General Public License v3.0](LICENSE).  
+Copyright (C) 2026 Sangeeth Promod.
 
 ---
 
